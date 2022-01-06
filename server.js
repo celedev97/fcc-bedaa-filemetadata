@@ -9,7 +9,7 @@ const cors = require('cors');
 app.use(cors({optionsSuccessStatus: 200}));
 
 // static files (used only for CSS)
-app.use(express.static('public'));
+app.use('/public', express.static(__dirname + '/public'));
 
 //#endregion
 
